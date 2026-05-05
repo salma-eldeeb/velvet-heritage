@@ -6,7 +6,7 @@
             msg.classList.add("show");
 
             setTimeout(function () {
-                window.location.href = "../SIGN IN/sign-in.html";
+                window.location.href = "velvet/SIGN IN/sign-in.html";
             }, 2000);
         }
 
