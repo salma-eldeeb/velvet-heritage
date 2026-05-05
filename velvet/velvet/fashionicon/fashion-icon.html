@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELVET HERITAGE</title>
+  
+    <link rel="stylesheet" href="../fashionicon/fashion-icon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,400..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="light">
+    <header>
+        <img src="../ABOUT US/images/vin 2.png" width="100px" alt="">
+        <h1>
+            VELVET HERITAGE
+        </h1>
+    </header>
+        <nav>
+            <ul class="headerul">
+                <li><a href="../home/index.html"><i class="fa-solid fa-house"></i> Home</a></li>
+                <li><a href="../ABOUT US/about us.html"><i class="fa-solid fa-user"></i> About Us</a></li>
+                <li><a href="../fashionicon/fashion-icon.html"><i class="fa-solid fa-crown"></i> Fashion Icon</a></li>
+                <li><a href="../fashionera/fashoin-era.html"><i class="fa-solid fa-hourglass-half"></i> Fashion Eras</a></li>
+                <li><a href="../aura/auralifestyle.html""><i class="fa-solid fa-hat-cowboy"></i> Aura Lifestyle </a></li>
+                <li><a href="../trend/trend-revival.html"><i class="fa-solid fa-clock"></i> Trends Revival</a></li>
+                <li><a href="../contact/contact-us.html"><i class="fa-solid fa-phone"></i> Contact Us</a></li>
+                <li> <button id="theme-switch" ><i class="fa-solid fa-sun"></i></button></li>
+            </ul> 
+        </nav>
+        <h2  >Fashion Icons</h2>
+        <div class="intro">
+            <div class="text">
+                <p>
+                    Throughout the ages, female fashion icons have defined the contours of elegance and beauty. It was never just about the dresses, but an expression of personality, power, and a uniqueness that time cannot erase. From Coco Chanel to Audrey Hepburn, their touch remains a source of inspiration for every generation seeking distinction.
+                    True elegance is that which defies time. In this section, we highlight the women who redefined the concept of fashion, transforming it from mere clothing into timeless masterpieces. These icons did not follow trends; they created them, leaving their mark permanently engraved in the history of global design.
+                </p></div>
+            <div class="img">
+                <img src="../fashionicon/images/2-7.png" alt="an image for Marilyn">
+            </div>
+        </div>
+    
+    
+    
+
+    <div class="carousel">
+        <div class="container">
+        </div>
+</div>
+<footer >
+    <div class="cpy">
+        <p>&copy; 2026 Velvet Heritage magazine. All Right Reserved </p>
+    </div>
+    <div class="cookies">
+        <ul class="foot">
+            <li><a href ="#">Privacy Policy</a></li>
+            <li><a href ="#">Terms of Service</a></li>
+            <li><a href ="#">Cookies</a></li>
+        </ul>
+    </div>
+</footer>
+    <script src="data.js"></script>
+    <script src="function.js"></script>
+    <script src="theme.js"></script>
+   
+    <script >
+        for(let i = 0; i< slide.length ;i++){
+    let carouselEle = document.querySelector(".carousel");
+    console.log(slide[i]);
+
+    console.log( showimage(slide[i].images));
+
+
+    carouselEle.innerHTML += `
+    <div class="container">
+<section>
+    <div class="text">
+    <h3>${slide[i].name}</h3>
+        <p>${slide[i].text}</p>
+        </div>
+</section>
+    <div class="slide">
+    <div class="slider">
+    ${showimage(slide[i].images)}
+    </div>
+    <div aria-hidden="" class="slider">
+    ${showimage(slide[i].images)}
+
+    </div>
+    </div>
+    </div>`;
+};
+    </script>
+</body>
+
+</html>

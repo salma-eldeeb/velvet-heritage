@@ -1,0 +1,281 @@
+/* ── CSS Variables: Dark Theme (default) ── */
+:root {
+    --bg-color:      #54392a;
+    --text-color:    #edded3;
+    --shadow:        #edded3;
+    --border-color:  #edded3;
+    --nav-hover-bg:  #edded3;
+    --nav-hover-txt: #321b1d;
+    --footer-border: #321b1d;
+    --text-accent:   #f5c28b;
+    --text-muted:    #e0d6cf;
+}
+
+ /* ── Light Theme ── */
+[data-theme="light"],
+body.light {
+    --bg-color:      #edded3;
+    --text-color:    #54392a;
+    --shadow:        #54392a;
+    --border-color:  #54392a;
+    --nav-hover-bg:  #54392a;
+    --nav-hover-txt: #edded3;
+    --footer-border: #c9a98a;
+    --text-accent:   #b05e10;
+    --text-muted:    #5c3d28;
+} 
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+
+header {
+    text-align: center;
+    padding: 30px 10px 16px;
+    font-family: 'Playfair Display', serif;
+    transition: 1s;
+    width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    perspective: 600px;
+    animation: fadeDown 1s ease;
+}
+
+.logo {
+    width: 60px;
+    transition: transform 0.8s ease;
+}
+
+.logo:hover {
+    transform: rotateY(360deg);
+}
+
+header h1 {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 6px;
+    color: var(--text-color);
+    transition: transform 0.8s ease, letter-spacing 0.4s ease, color 0.4s ease;
+}
+
+header h1:hover {
+    transform: rotateY(360deg);
+    letter-spacing: 8px;
+}
+
+/* ── Nav ── */
+.headerul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0 0 40px;
+    padding: 4px 0;
+    font-size: 14px;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    transition: border-color 0.4s ease;
+    animation: fadeUp 1s ease;
+}
+
+.headerul li {
+    list-style: none;
+    padding: 6px 4px;
+}
+
+.headerul li a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 6px 10px;
+    white-space: nowrap;
+    transition: 0.3s ease;
+}
+
+.headerul:hover li a {
+    opacity: 0.5;
+}
+
+.headerul li a:hover {
+    background-color: var(--nav-hover-bg);
+    color: var(--nav-hover-txt);
+    border-radius: 20px;
+    opacity: 1;
+}
+
+/* ── Theme Switch Button (inside nav) ── */
+#theme-switch {
+    cursor: pointer;
+    background: transparent;
+    border: 3px solid var(--border-color);
+    border-radius: 30px;
+    padding: 4px 12px;
+    font-size: 14px;
+    color: var(--text-color);
+    transition: 0.3s ease;
+    margin: 0;
+}
+
+#theme-switch:hover {
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 9px 9px 40px var(--shadow);
+}
+
+.fa-solid {
+    background-color: transparent;
+    color: var(--text-color);
+}
+
+/* ── About Section ── */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    min-height: 100vh;
+    gap: 40px;
+}
+
+.text {
+    width: 50%;
+    animation: fadeLeft 1.5s ease;
+}
+
+.text h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 3px;
+    color: var(--text-color);
+    text-shadow: 9px 9px 40px var(--shadow);
+}
+
+.para {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--text-muted);
+    margin-bottom: 20px;
+    text-align: justify;
+    transition: color 0.4s ease;
+}
+
+.para::first-letter {
+    font-size: 28px;
+    font-weight: bold;
+    color: var(--text-accent);
+}
+
+.image {
+    width: 40%;
+    animation: fadeRight 1.5s ease;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 80px;
+    box-shadow: 6px 6px 40px var(--shadow);
+    transition: 0.4s;
+    display: block;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+/* ── Footer ── */
+.cpy {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 20px;
+    border-top: 1px solid var(--footer-border);
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: var(--text-color);
+    transition: color 0.4s ease, border-color 0.4s ease;
+}
+
+.cookies {
+    text-align: center;
+    font-size: 15px;
+    color: var(--text-color);
+    transition: color 0.4s ease;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    margin: 10px;
+}
+
+.foot li a {
+    color: var(--text-color);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.foot:hover li a {
+    opacity: 0.5;
+}
+
+.foot li a:hover {
+    background-color: #321b1d;
+    padding: 10px;
+    border-radius: 20px;
+    opacity: 1;
+    color: white;
+}
+
+/* ── Animations ── */
+@keyframes fadeDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeLeft {
+    from { opacity: 0; transform: translateX(-50px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fadeRight {
+    from { opacity: 0; transform: translateX(50px); }
+    to   { opacity: 1; transform: translateX(0); }
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        padding: 40px 20px;
+    }
+    .text, .image {
+        width: 100%;
+    }
+    .headerul {
+        font-size: 12px;
+    }
+}
