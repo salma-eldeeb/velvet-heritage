@@ -6,7 +6,7 @@
 }
 body{
     transition: .3s;
-        background-image: url("../home/homeimg/fash5.jpg");
+        background-image: url("velvet/home/homeimg/fash5.jpg");
     color: #461615;
     text-shadow: 5px 5px 5px #7d5e3c;
     background-repeat: no-repeat;
@@ -14,7 +14,7 @@ body{
    
 }
 .light{
-    background-image: url("../home/homeimg/fash6.jpg");
+    background-image: url("velvet/home/homeimg/fash6.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     color: #edded3;
@@ -26,7 +26,7 @@ body{
     background-color: transparent;
 }
 .light{
-    background-image: url("../home/homeimg/fash6.jpg");
+    background-image: url("velvet/home/homeimg/fash6.jpg");
     color: #461615;
     text-shadow: 5px 5px 5px #7d5e3c;
     background-size: cover;
