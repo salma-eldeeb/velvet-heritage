@@ -12,13 +12,13 @@
 
 
   const pages = [
-    { name: "Home", url: "../home/index.html" },
-    { name: "About", url: "../ABOUT US/about us.html" },
-    { name: "fashion icon", url: "../fashionicon/fashion-icon.html" },
-    { name: "fashion eras", url: "../fashionera/fashoin-era.html" },
-    { name: " aura-lifestyle", url: "../aura/auralifestyle.html" },
-    { name: "trends-revival", url: "../trend/trend-revival.html" },
-    { name: "Contact-us", url: "../contact/contact-us.html" },
+    { name: "Home", url: "index.html" },
+    { name: "About", url: "velvet/ABOUT US/about us.html" },
+    { name: "fashion icon", url: "velvet/fashionicon/fashion-icon.html" },
+    { name: "fashion eras", url: "velvet/fashionera/fashoin-era.html" },
+    { name: " aura-lifestyle", url: "velvet/aura/auralifestyle.html" },
+    { name: "trends-revival", url: "velvet/trend/trend-revival.html" },
+    { name: "Contact-us", url: "velvet/contact/contact-us.html" },
     
   ];
 
